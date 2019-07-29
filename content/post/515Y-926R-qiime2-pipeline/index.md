@@ -3,28 +3,24 @@ title: qiime2 pipeline for 515Y/926R primers
 date: 2019-07-29
 ---
 
-# eASV-pipeline-for-515Y-926R
+**UPDATE July 2019 - The purpose of these additional scripts is to easily compare the classifications at different confidence levels all in one file known as a “Lookup Table”. This is particularly useful in instances where the default classification classifies the eASV as “Bacteria”, but a less stringent confidence level might classify that eASV further as actually a Mitochondrial sequence.**
 
-***UPDATE July 2019 - The purpose of these additional scripts is to easily compare the classifications at different confidence levels all in one file known as a “Lookup Table”. This is particularly useful in instances where the default classification classifies the eASV as “Bacteria”, but a less stringent confidence level might classify that eASV further as actually a Mitochondrial sequence. 
-One of the options of the qiime feature-classifier classify-sklearn step is to designate the --p-confidence threshold, which limits the depth for taxonomic assignments. The default setting is 0.7, indicating that the classifier is at least 70% confident in its classification. New scripts were added to the pipeline to re-run the classification step at less stringent confidence levels (0.5, 0.3, and -1). A --p-confidence value set at -1 disables the confidence calculation. 
-*EUK Scripts: E19-E22
-*PROK Scripts: P14-P17
-*For the DADA2 version of the pipeline only*
+**One of the options of the qiime feature-classifier classify-sklearn step is to designate the --p-confidence threshold, which limits the depth for taxonomic assignments. The default setting is 0.7, indicating that the classifier is at least 70% confident in its classification. New scripts were added to the pipeline to re-run the classification step at less stringent confidence levels (0.5, 0.3, and -1). A --p-confidence value set at -1 disables the confidence calculation.**
 
+* EUK Scripts: E19-E22
+* PROK Scripts: P14-P17
+* For the DADA2 version of the pipeline only*
 
-***UPDATE March 2019 - New functionality has been added for automatically slicing and dicing eASV tables according to various pre-set categories (e.g. 16S sequences without chloroplasts or mitochondria, 18S sequences with Metazoan sequences removed; see below for exact categories), and automatically making qiime2 barplots for each of these categories. Also, the repository was cleaned up so that the previous (confusing) way of cloning different branches is no longer used - now you just have clone the master branch and you will find all 3 pipeline variants stored in separate folders.***
+**UPDATE March 2019 - New functionality has been added for automatically slicing and dicing eASV tables according to various pre-set categories (e.g. 16S sequences without chloroplasts or mitochondria, 18S sequences with Metazoan sequences removed; see below for exact categories), and automatically making qiime2 barplots for each of these categories. Also, the repository was cleaned up so that the previous (confusing) way of cloning different branches is no longer used - now you just have clone the master branch and you will find all 3 pipeline variants stored in separate folders.**
 
 This is a collection of scripts for analyzing mixed 16S/18S amplicon sequences using bbtools, qiime2, DADA2, Deblur, biom, BLAST, and other tools. They are wrappers of a wrapper (qiime2), and are designed to make the in silico workflow for the 515Y/926R primer set easier, reproducible, and more accessible.
 
 The main difference between this pipeline and standard workflows is that it contains an initial 16S/18S splitting step, which is accomplished using bbsplit against curated 16S / 18S databases derived from SILVA132 and PR2. Other notable differences include:
 
-*Semi-automated methods to validate the performance of your denoising algorithm with the Fuhrman Lab mock communities
-
-*20% mismatches allowed in the primer removal step, meaning taxa that are amplified despite primer mismatches will be retained in the results
-
-*An automated workflow for processing 18S sequences that do not overlap
-
-*Automatic classification/splitting as noted above
+* Semi-automated methods to validate the performance of your denoising algorithm with the Fuhrman Lab mock communities
+* 20% mismatches allowed in the primer removal step, meaning taxa that are amplified despite primer mismatches will be retained in the results
+* An automated workflow for processing 18S sequences that do not overlap
+* Automatic classification/splitting as noted above
 
 Scripts are written with python or bash, and are designed for the pre-set conda environments on kraken.usc.edu. However, they could easily be used elsewhere by installing the conda environment for qiime2 specified in the scripts (currently qiime2-2018.8) and a separate environment (called bbmap-env) that has Brian Bushnell's Bestus Bioinformaticus Tools installed.
 
@@ -58,7 +54,7 @@ To build the splitting database (it's already done on kraken.usc.edu), run the f
 
 Then edit the splitting script ("01-sort-16S-18S-bbsplit.sh") so that it points to the full path of the directory specified above in the path part of the command.
 
-*CLASSIFIERS (Trained on the 515Y/926R primer pair)*
+**CLASSIFIERS (Trained on the 515Y/926R primer pair)**
 
 The default taxonomy we use is SILVA132. A pre-trained classifier for the 515Y/926R primer pair can be found here (just point the scripts to where you downloaded the file on your server/laptop):
 
@@ -86,34 +82,34 @@ https://drive.google.com/file/d/1iXYwwZky8V2HfwXh3kMTnG_7Y5sSYBtP/view?usp=shari
 
 Current automatic splitting/plotting capabilities (a tsv table and graph will be produced for each of these categories):
 
-16S (all filtering steps based on SILVA132 classifications, chloroplasts always classified with PhytoRef):
+**16S** (all filtering steps based on SILVA132 classifications, chloroplasts always classified with PhytoRef):
 
--16s excluding cyanobacteria, chloroplasts and mitochondria
+* 16s excluding cyanobacteria, chloroplasts and mitochondria
 
--16S excluding Archaea
+* 16S excluding Archaea
 
--Archaea only
+* Archaea only
 
--All prokaryotes (excluding chloroplasts/mitochondria)
+* All prokaryotes (excluding chloroplasts/mitochondria)
 
--16S with mitochondria subtracted
+* 16S with mitochondria subtracted
 
--16S with chloroplasts subtracted
+* 16S with chloroplasts subtracted
 
--Only cyanobacteria
+* Only cyanobacteria
 
--Cyanobacteria + chloroplasts
+* Cyanobacteria + chloroplasts
 
--Only chloroplasts
+* Only chloroplasts
 
--Only mitochondria
+* Only mitochondria
 
-18S:
+**18S**:
 
--All 18S sequences, classified using SILVA132
+* All 18S sequences, classified using SILVA132
 
--All 18S sequences, classified using PR2
+* All 18S sequences, classified using PR2
 
--18S sequences with Metazoa subtracted according to SILVA132 classifications
+* 18S sequences with Metazoa subtracted according to SILVA132 classifications
 
--18S sequences with Metazoa subtracted according to PR2 classifications
+* 18S sequences with Metazoa subtracted according to PR2 classifications
