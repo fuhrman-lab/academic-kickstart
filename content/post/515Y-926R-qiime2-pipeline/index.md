@@ -1,3 +1,8 @@
+---
+title: qiime2 pipeline for 515Y/926R primers
+date: 2019-07-29
+---
+
 # eASV-pipeline-for-515Y-926R
 
 ***UPDATE July 2019 - The purpose of these additional scripts is to easily compare the classifications at different confidence levels all in one file known as a “Lookup Table”. This is particularly useful in instances where the default classification classifies the eASV as “Bacteria”, but a less stringent confidence level might classify that eASV further as actually a Mitochondrial sequence. 
@@ -112,4 +117,3 @@ Current automatic splitting/plotting capabilities (a tsv table and graph will be
 -18S sequences with Metazoa subtracted according to SILVA132 classifications
 
 -18S sequences with Metazoa subtracted according to PR2 classifications
-
