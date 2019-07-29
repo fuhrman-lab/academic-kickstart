@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Research in the Fuhrman Lab focuses on microbial biodiversity and how viruses, bacteria, archaea, protists, and primary producers interact to shape the network of microorganisms functioning in the marine environment. Using field and laboratory experiments in conjunction with molecular, bioinformatic, and statistical tools, we investigate temporal and spatial patterns of microbial productivity and diversity, taking advantage of over 18 years of monthly data from our USC Microbial Observatory at the San Pedro Ocean Time Series (SPOT) as well as other data from around the world. Ongoing research emphasizes the roles of microbial interactions, including those with viruses and protists, on shaping the bacterial and archaeal populations, specifically seeking to link particular organisms within their complex network of associations.
+bio: Research in the Fuhrman Lab focuses on microbial biodiversity and how viruses, bacteria, archaea, protists, and primary producers interact to shape the network of microorganisms functioning in the marine environment.
 
 interests:
 - Microbial Ecology
@@ -51,8 +51,12 @@ social:
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
-  
+
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
 - Researchers
+- Visitors
+---
+
+Using field and laboratory experiments in conjunction with molecular, bioinformatic, and statistical tools, we investigate temporal and spatial patterns of microbial productivity and diversity, taking advantage of over 18 years of monthly data from our USC Microbial Observatory at the San Pedro Ocean Time Series (SPOT) as well as other data from around the world. Ongoing research emphasizes the roles of microbial interactions, including those with viruses and protists, on shaping the bacterial and archaeal populations, specifically seeking to link particular organisms within their complex network of associations.
