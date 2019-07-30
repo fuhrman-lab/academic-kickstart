@@ -17,12 +17,13 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Jesse is a postdoc in the Fuhrman lab, working on the CBIOMES collaboration. Please see jcmcnch.github.io for more information about his experience and interests.
+bio: Jesse is a postdoc in the Fuhrman lab, working on the CBIOMES collaboration. Please see https://jcmcnch.github.io and https://dornsife.usc.edu/labs/fuhrmanlab/people/ for more information about his experience and interests.
 
 interests:
-- Microbial Ecology
-- Methods Development and Validation
-- Interactions and Networks
+
+- Marine Microbiology
+- Energy Conservation Mechanisms in Chemoautotrophs
+- Laboratory / Computational Methods Development
 
 
 # Social/Academic Networking
@@ -54,3 +55,5 @@ user_groups:
 - Researchers
 - Visitors
 ---
+
+Jesse is a postdoc in the Fuhrman lab, working on the CBIOMES collaboration. Please see jcmcnch.github.io for more information about his experience and interests.
