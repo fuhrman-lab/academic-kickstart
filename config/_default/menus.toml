@@ -9,9 +9,14 @@
   weight = 10
 
 [[main]]
-  name = "Protocols and Latest News"
-  url = "#posts"
+  name = "Featured Protocols"
+  url = "#featured"
   weight = 20
+
+[[main]]
+  name = "Recent Posts"
+  url = "#posts"
+  weight = 25
 
 [[main]]
   name = "Projects"
