@@ -1,6 +1,8 @@
 ---
 title: qiime2 pipeline for 515Y/926R primers
 featured: true
+authors:
+-jesse
 date: 2019-07-29
 ---
 
