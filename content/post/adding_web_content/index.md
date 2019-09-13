@@ -37,10 +37,12 @@ Then just go in and edit the content in the markdown (.md) file. You can replace
 11. Now we're ready to push the changed content to the remote repository. What we're going to push is the markdown content but not the hugo-generated website in the "public" folder. In academic-kickstart this is already taken care of by the addition of a .gitignore file. Take a look at it yourself to see how it works - this will probably come in handy in your future work.
 12. OK so we gotta do three things: add, commit and push, as follows:
 
-`git add .`
+`git add .` #adds everything
 
-`git commit -m "Adding instructions for updating website"`
+`git commit -m "Adding instructions for updating website"` #change message to explain what you've done
 
-`git push origin master`
+`git push origin master` #sends your changes to the interwebs
+
+13. The rest is easy! Go to your **academic-kickstart-fuhrmanlab** repository, and make sure the changes have been successfully pushed. You should see some files have been changed recently, and also that your branch should be several commmits ahead of the fuhrman-lab master branch. Once you've confirmed this, then initiate a pull request. Follow the prompts, add in any relevant info, and then likely you can automatically merge it with the master branch (we're all part of the same group so we all have access). Once this is done, then just let Jesse know and he can update the website!
 
 \* e.g. `git remote set-url origin git@github.com:fuhrman-lab/academic-kickstart`
