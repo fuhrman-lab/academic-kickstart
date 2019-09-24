@@ -35,7 +35,7 @@ Then just go in and edit the content in the markdown (.md) file. You can replace
 9. Now we can add some content! To make it easier for others in the lab to follow, please provide a blog post-like description of the background behind the protocol as well as a link to a PDF or website where the protocol is stored. To make a new post, just copy one of the existing folders in the same way you ddid for your profile, and edit the markdown to create your post. PDFs and other files can be stored in this folder too, and I like to put them in a 'files' subfolder to keep it organized. It then can be linked in your post as follows: `[Text you want to show](files/testing.pdf)`, which will render like this: [Text you want to show](files/testing.pdf)
 10. Take a look at your post in your local browser instance, and edit until you think it looks good!
 11. Now we're ready to push the changed content to the remote repository. What we're going to push is the markdown content but not the hugo-generated website in the "public" folder. In academic-kickstart this is already taken care of by the addition of a .gitignore file. Take a look at it yourself to see how it works - this will probably come in handy in your future work.
-12. OK so we gotta do three things: add, commit and push, as follows:
+12. OK so we gotta do three things: add, commit and push, as follows (make sure you do this from your repository's **base directory**):
 
 `git add .` #adds everything
 
