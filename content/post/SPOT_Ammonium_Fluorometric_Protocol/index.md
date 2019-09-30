@@ -13,4 +13,4 @@ After the samples are collected and the OPA reagent has been added on the boat, 
 
 It is very important to use MQ water rather than DI water and to be careful about ammonium contamination. 
 
-The latest protocol is found here: [SPOT Ammonium Fluormetric Protocol July 03 2019 Version MA] (files/Ammonium_Fluorometric_Protocol_MA_July_3_2019)
+The latest protocol is found here: [SPOT Ammonium Fluormetric Protocol July 03 2019 Version MA] (files/Ammonium_Fluorometric_Protocol_MA_July_3_2019.pdf)
