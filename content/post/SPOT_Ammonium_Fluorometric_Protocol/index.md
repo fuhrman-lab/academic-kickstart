@@ -1,5 +1,5 @@
 ---
-title: SPOT: Ammonium Fluorometric Protocol
+title: SPOT - Ammonium Fluorometric Protocol
 featured: true
 authors:
 - melody
