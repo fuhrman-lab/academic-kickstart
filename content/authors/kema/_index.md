@@ -4,7 +4,8 @@ name: Kema Malki
 
 # Username (this should match the folder name)
 authors:
--kema
+- kema
+
 # Is this the primary user of the site?
 superuser: false
 
