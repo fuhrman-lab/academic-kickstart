@@ -16,7 +16,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Kema is a research specialist and lab manager in the Fuhrman Lab working on the CBIOMES collaboration. 
+bio: Kema is a research specialist and lab manager in the Fuhrman Lab working on the CBIOMES collaboration.
 
 interests:
 
