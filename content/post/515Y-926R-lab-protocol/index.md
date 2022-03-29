@@ -3,7 +3,7 @@ title: Lab Protocol for 515Y/926R universal primers
 featured: true
 authors:
 - jesse
-date: 2019-07-29
+date: 2022-03-29
 ---
 
 **Critical operational note for those using this protocol: As currently written, *this protocol is not appropriate for new Illumina sequencing technology (i.e. patterned flow cells found in NovaSeq).* This is due to more serious index-hopping artifacts that are found in this new version of their platform. We will upload an updated protocol, with unique dual indexing in the primers, as soon as we have fully tested it.**
