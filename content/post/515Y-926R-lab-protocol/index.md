@@ -6,7 +6,7 @@ authors:
 date: 2019-07-29
 ---
 
-**Critical operational note for those using this protocol: As currently written, *this protocol is not appropriate for new Illumina sequencing technology (i.e. patterned flow cells found in NovaSeq).* This is due to more serious index-hopping artifacts that are found in this new version of their platform. We will upload an updated protocol as soon as we have fully tested it.**
+**Critical operational note for those using this protocol: As currently written, *this protocol is not appropriate for new Illumina sequencing technology (i.e. patterned flow cells found in NovaSeq).* This is due to more serious index-hopping artifacts that are found in this new version of their platform. We will upload an updated protocol, with unique dual indexing in the primers, as soon as we have fully tested it.**
 
 **As currently written, this protocol is *still appropriate with older platforms such as HiSeq 2500*, and we recommend Tufts' Paired-End 250 Rapid-Run Service (RL-PE250) service for our US collaborators ([Website with price info](http://tucf-genomics.tufts.edu/home/illumina_hiseq2500)). However, this platform is being phased out so may not be available for much longer. Moving forward, *MiSeq* will be the only platform to support 2x250bp reads that could support the currently version of the protocol.**
 
